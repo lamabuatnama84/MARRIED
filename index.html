@@ -324,8 +324,9 @@
 
         <img src="to images/rsvp.jpg" alt="" class="rsvp-img">
         <div class="message">
-          <form id="formMessage">
+          <form id="formMessage" name="submit-to-google-sheet">
             <div class="input-group">
+              <input type="text" name="id" id="id" >
               <input type="text" name="nama" placeholder="Nama">
             </div>
             <div class="input-group">
@@ -335,16 +336,16 @@
               <textarea  cols="30" rows="10" name="pesan" placeholder="Berikan Ucapan & Doa Terbaik Untuk kedua Mempelai"></textarea>
             </div>
             <div class="input-group">
-              <select name="" id="">
+              <select name="kehadiran" id="">
                 <option >Konfirmasi Kehadiran</option>
                 <option value="Hadir">Hadir</option>
                 <option value="Tidak">Tidak Hadir</option>
               </select> 
-            </div>
+            </div>                   
             <button type="submit" class="btn">Send  <i data-feather="arrow-right" style="vertical-align: middle"></i></button>
           </form>
-          <div class="container-card">
-            <div class="card-message">
+          <div class="container-card"  id="comments-container">
+            <div class="card-message" id="wlee">
              
             </div>
           </div>
@@ -394,11 +395,11 @@
     <script src="js/script.js"></script>
     <!-- Lihgtbox js -->
     <script src="js/lightbox-plus-jquery.js"></script>
-    <!-- Message Strorage -->
-    <script src="js/strorage.js"></script>
     <!-- toastr -->
     <script src="toastr/toastr.min.js"></script>
     <!-- arctext -->
     <script src="arctext/js/jquery.arctext.js"></script>
+    <!-- Upload Pesan -->
+    <script src="js/upload.js"></script>
   </body>
 </html>
